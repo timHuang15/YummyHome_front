@@ -1,0 +1,43 @@
+.navbar-change-menu {
+	background-color: #222222;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #FFFFFF;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: #FFFFFF;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #999999;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #333333;
+}
+
+.btn-default-change {
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+	color: #ffffff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
