@@ -36,12 +36,11 @@
 .t2,
 .t3,
 .t4,
-.t5,
-.t6 {
+.t5{
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	line-height: 400px;
+	/*line-height: 40px;*/
 	background: skyblue;
 	margin: 50px auto;
 	padding-top: 10px;

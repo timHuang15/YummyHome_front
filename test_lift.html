@@ -1,107 +1,246 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>左侧电梯演示</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap3/css/bootstrap.css"/>
-	<link rel="stylesheet" href="css/test/test_lift.css" />
-	<link rel="stylesheet" type="text/css" href="css/index/index.css"/>
-	
-	<script src="js/jquery/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="js/test/LiftEffect.js"></script>
-	
-</head>
-<body>
 
-<div class="lift-nav">
-	<ul class="lift">
-		<li>1楼</li>
-		<li>2楼</li>
-		<li>3楼</li>
-		<li>4楼</li>
-		<li>5楼</li>
-		<li>6楼</li>
-	</ul>
-</div>
+	<head>
+		<meta charset="utf-8">
+		<title>左侧电梯演示</title>
 
-<div class="lift-target">
-	<div class="t1 container">
-		<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail thumbnail-change">
-							<img src="img/showImage/Spring rolls2.jpg" alt="#">
-						<div class="caption text-center">
-							<h3>Spring rolls</h3>
-							<p>blablablablablablablablablablablablablablablablablablablabla</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Buy</a>
-								<a href="#" class="btn btn-default" role="button">Learn</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail thumbnail-change">
-							<img src="img/showImage/Spring rolls2.jpg" alt="#">
-						<div class="caption text-center">
-							<h3>Spring rolls</h3>
-							<p>blablablablablablablablablablablablablablablablablablablabla</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Buy</a>
-								<a href="#" class="btn btn-default" role="button">Learn</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail thumbnail-change">
-							<img src="img/showImage/Spring rolls2.jpg" alt="#">
-						<div class="caption text-center">
-							<h3>Spring rolls</h3>
-							<p>blablablablablablablablablablablablablablablablablablablabla</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Buy</a>
-								<a href="#" class="btn btn-default" role="button">Learn</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail thumbnail-change">
-							<img src="img/showImage/Spring rolls2.jpg" alt="#">
-						<div class="caption text-center">
-							<h3>Spring rolls</h3>
-							<p>blablablablablablablablablablablablablablablablablablablabla</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Buy</a>
-								<a href="#" class="btn btn-default" role="button">Learn</a>
-							</p>
-						</div>
-					</div>
-				</div>			
-			</div>
-	</div>
-	<div class="t2">这是2楼</div>
-	<div class="t3">这是3楼</div>
-	<div class="t4">这是4楼</div>
-	<div class="t5">这是5楼</div>
-	<div class="t6">这是6楼</div>
-</div>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap3/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/test/test_lift.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/index.css" />
+		<link rel="stylesheet" href="css/test/myPage.css" />
 
-
-<script>
-
-	$(function(){
-		LiftEffect({
-			"control1": ".lift-nav", 						  //侧栏电梯的容器
-			"control2": ".lift",                           //需要遍历的电梯的父元素
-			"target": [".t1",".t2",".t3",".t4",".t5",".t6"], //监听的内容，注意一定要从小到大输入
-			"current": "current" 						  //选中的样式
-		});
-
+		<script src="js/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="js/test/LiftEffect.js"></script>
+		<script type="text/javascript" src="js/test/jqPaginator.min.js"></script>
 		
-	})
-</script>
-</body>
+
+	</head>
+
+	<body>
+
+		<div class="lift-nav">
+			<ul class="lift">
+				<li><img src="img/icon/table.png"></li>
+				<li><img src="img/icon/yue.png"></li>
+				<li><img src="img/icon/chuan.png"></li>
+				<li><img src="img/icon/west.png"></li>
+				<li><img src="img/icon/wine.png"></li>
+			</ul>
+		</div>
+
+		<div class="lift-target">
+			<!--**************************这是一楼,饭桌**************************-->
+			<div class="t1 container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--**************************这是二楼,饭桌**************************-->
+			<div class="t2 container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail thumbnail-change">
+							<img src="img/showImage/Spring rolls2.jpg" alt="#">
+							<div class="caption text-center">
+								<h3>Spring rolls</h3>
+								<p>blablablablablablablablablablablablablablablablablablablabla</p>
+								<p>
+									<a href="#" class="btn btn-primary" role="button">Buy</a>
+									<a href="#" class="btn btn-default" role="button">Learn</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--分頁-->
+				<script type="text/javascript">
+					function loadData(num) {
+						$("#PageCount").val("89");
+					}
+				</script>
+					<form id="form1" runat="server">
+						<div>
+							<ul class="pagination page_change" id="pagination">
+							</ul>
+							<input type="hidden" id="PageCount" runat="server" />
+							<input type="hidden" id="PageSize" runat="server" value="8" />
+							<input type="hidden" id="countindex" runat="server" value="10" />
+							<!--设置最多显示的页码数 可以手动设置 默认为7-->
+							<input type="hidden" id="visiblePages" runat="server" value="4" />
+						</div>
+						<script src="res/myPage.js" type="text/javascript"></script>
+					</form>
+				
+
+			</div>
+			<!--**************************这是三楼,饭桌**************************-->
+			<div class="t3">这是3楼</div>
+			<!--**************************这是四楼,饭桌**************************-->
+			<div class="t4">这是4楼</div>
+			<!--**************************这是五楼,饭桌**************************-->
+			<div class="t5">这是5楼</div>
+			
+		</div>
+
+		<script>
+			$(function() {
+				LiftEffect({
+					"control1": ".lift-nav", //侧栏电梯的容器
+					"control2": ".lift", //需要遍历的电梯的父元素
+					"target": [".t1", ".t2", ".t3", ".t4", ".t5"], //监听的内容，注意一定要从小到大输入
+					"current": "current" //选中的样式
+				});
+
+			})
+		</script>
+		
+		<script type="text/javascript" src="js/test/myPage.js"></script>
+	</body>
+
 </html>
